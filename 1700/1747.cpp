@@ -1,4 +1,6 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int n, arr[1003001] = {1, 1, };
 
@@ -20,10 +22,8 @@ int main() {
     for(int j = 2; i*j<=1003001; j++)
       if(!arr[i*j])
         arr[i*j] = 1;
-  scanf("%d", &n);
+  cin >> n;
   for(int i = n; i<=1003001; i++)
     if(!arr[i] && f(i))
-      printf("%d", i), i = 1003002;
-
-  return 0;
+      cout << i, i = 1003002;
 }

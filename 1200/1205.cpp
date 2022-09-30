@@ -1,19 +1,19 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int main(){
   int n, p, newn, rankcnt = 1, arr[55] = {0, };
-  scanf("%d %d %d", &n, &newn, &p);
+  cin >> n >> newn >> p;
   for(int i = 0; i<n; i++)
-    scanf("%d", &arr[i]);
+    cin >> arr[i];
   for(int i = 0; i<n; i++)
     if(newn < arr[i])
       rankcnt++;
   if(arr[p-1] >= newn && n >= p)
-    printf("-1");
+    cout << -1;
   else if(rankcnt <= p)
-    printf("%d", rankcnt);
+    cout << rankcnt;
   else
-    printf("-1");
-
-	return 0;
+    cout << -1;
 }
