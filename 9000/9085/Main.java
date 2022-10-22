@@ -11,7 +11,7 @@ public class Main {
             re = 0;
             n = Integer.parseInt(br.readLine());
             StringTokenizer st = new StringTokenizer(br.readLine());
-            while(st.hasMoreTokens())
+            while(n-->0)
                 re += Integer.parseInt(st.nextToken());
             System.out.println(re);
         }
