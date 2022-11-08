@@ -3,20 +3,6 @@ import java.io.*;
 
 public class Main {
 
-    static boolean binary(int l, int r, String[] s, String t){
-        int m;
-        while(l<r){
-            m = (l+r)/2;
-            if(t.equals(s[m]))
-                return true;
-            else if(t.compareTo(s[m])<0)
-                r = m-1;
-            else
-                l = m+1;
-        }
-        return false;
-    }
-
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
