@@ -16,10 +16,9 @@ public class Main {
                 int[] arr = new int[2];
                 for(int i = 0; i<2; i++)
                     arr[i] = q.poll()-1;
-                for(int i = 0; i<2; i++){
+                for(int i = 0; i<2; i++)
                     if(arr[i]!=0)
                         q.add(arr[i]);
-                }
                 re++;
             }
             else
