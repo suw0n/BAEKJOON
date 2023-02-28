@@ -11,7 +11,7 @@ public class Main {
         StringBuilder sb = new StringBuilder();
 
         int t = Integer.parseInt(br.readLine()), n, i;
-        long sum;
+        long sum, a, b;
         PriorityQueue<Long> que = new PriorityQueue<>();
         StringTokenizer st;
         while(t-->0) {
@@ -23,8 +23,8 @@ public class Main {
                 que.add(Long.parseLong(st.nextToken()));
             }
             for(i = 1; i<n; i++) {
-                long a = que.poll();
-                long b = que.poll();
+                a = que.poll();
+                b = que.poll();
                 que.add(a+b);
                 sum += a+b;
             }
